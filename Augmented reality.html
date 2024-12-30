@@ -1,0 +1,24 @@
+<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+
+<style>
+  .ar-button {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+</style>
+
+<model-viewer 
+  src="https://drive.google.com/uc?export=download&id=14m-i2FhCkQFzDh6KUAWhe7FMxifAvNSN"
+  ios-src="https://drive.google.com/uc?export=download&id=1Zp-Jhm_i9K4CGiiYVvnqDaK07f54Sq9p"
+  ar 
+  ar-modes="webxr scene-viewer quick-look"
+  camera-controls 
+  environment-image="neutral"
+  alt="A painting model"
+  style="width: 100%; height: 500px;"
+  orientation="0deg 0deg 90deg">
+  <button slot="ar-button" class="ar-button">View in AR</button>
+</model-viewer>
